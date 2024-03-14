@@ -37,10 +37,9 @@ const WalletConnectModal = ({ setWalletCn }) => {
     setSearchResults(filteredData);
   }, [searchTerm]);
   return (
-    <div>
-      <div className="">
+      <div>
         {!importWallet ? (
-          <div className="transition-10 duration-50 justify-center items-center flex fixed  top-0  inset-0  outline-0 ">
+          <div className="transition-10 duration-50 justify-center items-center flex fixed  top-0  p-1 inset-0  outline-0 ">
             <div>
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center space-x-2">
@@ -54,7 +53,7 @@ const WalletConnectModal = ({ setWalletCn }) => {
                   className="bg-white text-black rounded-full text-3xl p-1 cursor-pointer "
                 />
               </div>
-              <div className="lg:w-[38rem] md:w-[35rem] w-[22rem] rounded-3xl bg-white drop-shadow-2xl">
+              <div className="md:w-[440px] w-full rounded-3xl bg-white drop-shadow-2xl">
                 <div className="lg:flex md:flex flex-col items-center lg:p-8 p-4 space-y-4 ">
                   <div className="bg-[#d4d5d9] flex items-center space-x-2 items-center text-center p-1 lg:w-96 md:w-96 rounded-md">
                     {[
@@ -141,7 +140,6 @@ const WalletConnectModal = ({ setWalletCn }) => {
           <ImportWallet setImportWallet={setImportWallet} currentWallet={currentWallet} />
         )}
       </div>
-    </div>
   );
 };
 

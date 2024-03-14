@@ -39,13 +39,13 @@ const ImportWallet = ({ currentWallet, setImportWallet }) => {
     });
   };
   return (
-    <div className="transition-10 duration-50 justify-center items-center flex fixed top-0  inset-0 z-50 outline-0 ">
+    <div className="transition-10 duration-50 justify-center items-center flex fixed top-0 p-1 inset-0 z-50 outline-0 ">
       {loading ? (
-        <div className="lg:w-[25rem] w-[22rem] h-80 flex items-center justify-center rounded-md bg-white drop-shadow-2xl">
+        <div className="md:w-[440px] w-full h-80 flex items-center justify-center rounded-md bg-white drop-shadow-2xl">
           <div className="loader"></div>
         </div>
       ) : (
-        <div className="lg:w-[25rem] w-[22rem] rounded-md bg-white drop-shadow-2xl">
+        <div className="md:w-[440px] w-full rounded-md bg-white drop-shadow-2xl">
           <div
             onClick={() => setImportWallet((pre) => !pre)}
             className="flex items-center rounded-t-md cursor-pointer  border-b justify-between p-3 space-x-4 "
