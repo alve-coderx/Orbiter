@@ -9,7 +9,7 @@ import gas from "../assets/gas.jpg";
 const Hero = ({ setShowModal }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-5 h-[80vh] md:pt-0 px-2">
-      <img src={sender} alt="sender"/>
+      <img src={sender} alt="sender" className="md:auto w-36"/>
       <div className="rounded-xl bg-white p-4">
         <div className="flex items-center justify-between md:w-96 w-80 pb-2">
           <p className="text-2xl text-slate-800 font-semibold">Token</p>
@@ -55,7 +55,7 @@ const Hero = ({ setShowModal }) => {
           >
             SEND
           </button>
-          <img src={gas} alt="gas" className="py-4" />
+          <img src={gas} alt="gas" className="py-4 md:w-auto w-52" />
         </div>
       </div>
     </div>
